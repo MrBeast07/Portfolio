@@ -1,0 +1,243 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: #fff; /* changed to white text color */
+    background-color: #212121; /* dark background color */
+}
+
+/* Header and navigation */
+header {
+    background-color: #333; /* dark background color */
+    color: #fff; /* white text color */
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff; /* white text color */
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #333; /* dark background color */
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff; /* white text color */
+}
+
+/* Portfolio section */
+#portfolio ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#portfolio li {
+    margin: 20px;
+    width: calc(33.33% - 20px);
+}
+
+#portfolio figure {
+    margin: 0;
+    padding: 0;
+}
+
+#portfolio img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#portfolio figcaption {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #fff; /* white text color */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #portfolio li {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #portfolio li {
+        width: 100%;
+    }
+}
+
+img #profpic{
+    width: 500px;
+    height: 800px;
+    object-fit: cover;
+    left: 50%;
+
+}
+#home#about{
+    width: 50%;
+    
+}
+section #top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+}
+h1{
+    text-align: center;
+}
+.container img{
+    height: 500px;
+    width: 500px;
+    left: 50%;
+}
+
+div#education.education{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    
+    border-radius: 5px;
+}
+.education section{
+  
+    height: 130px;
+    width: 100%;
+    text-align: start;
+    border-radius: 8px;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 20px;
+    left: 20px;
+    width: 100%;
+    
+
+
+
+}
+.skills h1{
+padding: 4px;
+margin-right: 30px;
+
+}
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    
+
+}
+
+.projects section{
+    min-height: 300px;
+    min-width: 300px;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    
+}
+
+ .projects section:hover{
+    transform:scale(1.2);
+    grid-column: 1/-1;
+    width: 100%;
+    height: 100%;
+    
+ }
+ 
+
+.projects section p{
+    display: none;
+}
+.projects section:hover p{
+    display: block;
+    text-decoration:none;
+    color: #fff;
+    
+}
+
+
+ #lan img{
+    height: 80px;
+    width: 80px;
+    padding: 3px;
+    margin-right: 10px;
+    
+
+ }
+ .skills section{
+    height: 150px;
+    width: 130px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    
+ }
+ #lan h2{
+    text-align: center;
+    font-size: 16px;
+
+ }
+ .education#year{
+    text-align: right;
+    right: 10px;
+    
+}
+ 
+
+ 
